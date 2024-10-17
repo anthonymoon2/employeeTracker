@@ -80,16 +80,15 @@ function viewAll(tableName) {
     });
 }
 async function checkExistence(tableName, roleID) {
-    // create SQL statement to check if role exists
+    // create SQL statement to check if it exists
     const roleCheckSQL = `SELECT * FROM ${tableName} WHERE id = $1`;
     try {
         const result = await pool.query(roleCheckSQL, [roleID]);
         if (result.rows.length === 0) {
-            // no matching role is found
+            // no matching id was found
             return false;
         }
         else {
-            console.log("Role was found.");
             return true;
         }
     }

@@ -13,4 +13,4 @@ npm run build
 npm run start
 
 ## Video Walkthrough
-[Video Link](jjj)
+[Video Link](https://drive.google.com/file/d/1DccAitxmm_yw8sLYYVrdzTvBE-dHUtQS/view?usp=sharing)
